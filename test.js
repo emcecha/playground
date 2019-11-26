@@ -1,33 +1,33 @@
-const button = document.querySelector(".button");
-const text = document.querySelector(".text");
+// const button = document.querySelector(".button");
+// const text = document.querySelector(".text");
 
-button.addEventListener("mouseover", function (event) {
-  let x = event.clientX;
-  let y = event.clientY;
+// button.addEventListener("mouseover", function (event) {
+//   let x = event.clientX;
+//   let y = event.clientY;
 
-  let newposX = x - text.getBoundingClientRect().x;
-  let newposY = y - text.getBoundingClientRect().y;
+//   let newposX = x - text.getBoundingClientRect().x;
+//   let newposY = y - text.getBoundingClientRect().y;
 
-  text.style.transform = "translate("+ (newposX * 0.7) +"px,"+ (newposY * 0.7) +"px)";
+//   text.style.transform = "translate("+ (newposX * 0.7) +"px,"+ (newposY * 0.7) +"px)";
 
-  // setTimeout(() => {
-  //   text.style.transition = "none";
-  // }, 1000);
+//   // setTimeout(() => {
+//   //   text.style.transition = "none";
+//   // }, 1000);
 
-  button.addEventListener("mousemove", function (event) {
-    let x = event.clientX;
-    let y = event.clientY;
+//   button.addEventListener("mousemove", function (event) {
+//     let x = event.clientX;
+//     let y = event.clientY;
 
-    let newposX = x - text.getBoundingClientRect().x;
-    let newposY = y - text.getBoundingClientRect().y;
+//     let newposX = x - text.getBoundingClientRect().x;
+//     let newposY = y - text.getBoundingClientRect().y;
 
-    text.style.transform = "translate("+ (newposX * 0.5) +"px,"+ (newposY * 0.5) +"px)";
-  })
-})
+//     text.style.transform = "translate("+ (newposX * 0.5) +"px,"+ (newposY * 0.5) +"px)";
+//   })
+// })
 
-button.addEventListener("mouseout", function () {
-  text.style = "";
-})
+// button.addEventListener("mouseout", function () {
+//   text.style = "";
+// })
 
 // ------------------------------------------------------------------
 
@@ -70,9 +70,8 @@ $(function() {
     verticalSwiping: true,
     arrows: false,
     slidesToScroll: 1,
-    swipeToSlide: true,
     centerMode: true,
-    centerPadding: "15%",
+    centerPadding: "17%",
     focusOnSelect: true,
     speed: 200,
     easing: "ease-out",
@@ -90,14 +89,15 @@ $(function() {
   })
 
   document.addEventListener("keydown", function (event) {
-
-    event.preventDefault()
     
     if (event.key === "ArrowDown") {
+      event.preventDefault()
       $navSlider.slick("slickNext");
     } else if (event.key === "ArrowUp") {
+      event.preventDefault()
       $navSlider.slick("slickPrev");
     } else if (event.key === "Escape") {
+      event.preventDefault()
       menu.classList.toggle("open");
       nav.classList.toggle("open");
     }
