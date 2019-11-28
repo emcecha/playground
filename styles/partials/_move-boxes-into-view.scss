@@ -1,0 +1,33 @@
+.move-boxes-into-view {
+  display: flex;
+  justify-content: space-between;
+
+  .box {
+    background: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20rem;
+    flex: 0 0 30%;
+    color: whitesmoke;
+  }
+  
+  .observe {
+    transition: opacity 1500ms ease-out,transform 1000ms ease-out;
+    opacity: 0;
+  }
+  
+  .translate-y {
+    transform: translateY(90%);
+  }
+  
+  .translate-x-left {
+    transform: translateX(-100%);
+    background-color: mediumseagreen;
+  }
+  
+  .is-intersecting {
+    transform: none;
+    opacity: 1;
+  }
+}
