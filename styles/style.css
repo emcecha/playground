@@ -171,4 +171,103 @@ body {
           align-items: center;
   border-radius: 50%;
 }
+
+.footer {
+  background-color: #fba008;
+  padding: 15rem 5.2% 9rem;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-family: "Montserrat";
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__row--logo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 9.7rem;
+}
+
+.footer__row--navigation {
+  margin: 0 0 4.4rem;
+}
+
+.footer__logo {
+  width: 27.5rem;
+  height: 3.2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/ar-logo.png");
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-link {
+  width: 2.4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 2.4rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 0 0 4rem;
+  display: block;
+}
+
+.footer__social-link:first-child {
+  margin: 0;
+}
+
+.footer__social-link--insta {
+  background-image: url("../images/icon-insta.png");
+}
+
+.footer__social-link--fb {
+  background-image: url("../images/icon-fb.png");
+}
+
+.footer__social-link--yt {
+  background-image: url("../images/icon-yt.png");
+}
+
+.footer__social-link--m {
+  background-image: url("../images/icon-m.png");
+}
+
+.footer__contact {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 34.4rem;
+          flex: 0 1 34.4rem;
+  letter-spacing: 0;
+  margin: 0 7.8% 0 0;
+}
+
+.footer__navigation {
+  letter-spacing: 0.035rem;
+  margin: 0 11% 0 0;
+}
+
+.footer__copy {
+  font-size: 1.2rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */

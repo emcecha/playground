@@ -67,3 +67,9 @@ function getMultiplier(fraction) {
 
   return Number(multiplier);
 }
+
+let myStrNum = "$9.99";
+
+let myNum = myStrNum.match(/\d+/g).map(Number);
+
+console.log(myNum);

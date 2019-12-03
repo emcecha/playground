@@ -1,0 +1,89 @@
+.footer {
+  background-color: #fba008;
+  padding: 15rem 5.2% 9rem;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-family: "Montserrat";
+
+  &__row {
+    display: flex;
+
+    &--logo {
+      justify-content: space-between;
+      margin: 0 0 9.7rem;
+    }
+
+    &--navigation {
+      margin: 0 0 4.4rem;
+    }
+  }
+
+  &__logo {
+    width: 27.5rem;
+    height: 3.2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/ar-logo.png");
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-link {
+    width: 2.4rem;
+    flex-shrink: 0;
+    height: 2.4rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 0 0 4rem;
+    display: block;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &--insta {
+      background-image: url("../images/icon-insta.png");
+    }
+
+    &--fb {
+      background-image: url("../images/icon-fb.png");
+    }
+
+    &--yt {
+      background-image: url("../images/icon-yt.png");
+    }
+
+    &--m {
+      background-image: url("../images/icon-m.png");
+    }
+  }
+
+  &__contact {
+    flex: 0 1 34.4rem;
+    letter-spacing: 0;
+    margin: 0 7.8% 0 0;
+  }
+
+  &__navigation {
+    letter-spacing: 0.035rem;
+    margin: 0 11% 0 0;
+  }
+
+  &__copy {
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
