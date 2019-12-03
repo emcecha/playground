@@ -1,0 +1,20 @@
+.counter-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 7rem 0 10rem;
+
+  .counter {
+    font-family: "Space Mono";
+    font-weight: 700;
+    color: crimson;
+    font-size: 10rem;
+    height: 30rem;
+    width: 30rem;
+    border: 5px solid crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}

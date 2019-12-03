@@ -1,0 +1,11 @@
+.moving-text {
+  overflow: hidden;
+  margin: 7rem 0 10rem;
+
+  .text {
+    color: orange;
+    font-family: "Abril Fatface";
+    font-size: 12rem;
+    transition: transform 500ms ease-out;
+  }
+}

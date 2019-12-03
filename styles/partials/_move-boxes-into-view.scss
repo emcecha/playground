@@ -1,6 +1,7 @@
 .move-boxes-into-view {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .box {
     background: crimson;
@@ -10,22 +11,23 @@
     font-size: 20rem;
     flex: 0 0 30%;
     color: whitesmoke;
+    margin: 0 0 4rem;
   }
-  
+
   .observe {
-    transition: opacity 1500ms ease-out,transform 1000ms ease-out;
+    transition: opacity 1500ms ease-out, transform 1000ms ease-out;
     opacity: 0;
   }
-  
+
   .translate-y {
     transform: translateY(90%);
   }
-  
+
   .translate-x-left {
     transform: translateX(-100%);
     background-color: mediumseagreen;
   }
-  
+
   .is-intersecting {
     transform: none;
     opacity: 1;

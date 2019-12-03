@@ -11,4 +11,7 @@
     ".vscode/**"
   ],
   "liveSassCompile.settings.generateMap": true,
+  "editor.tabSize": 2,
+  "prettier.useTabs": true,
+  "editor.detectIndentation": false,
 }

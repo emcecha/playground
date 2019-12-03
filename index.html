@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Doggo Fetch</title>
-    <link rel="stylesheet" type="text/css" href="./styles/slick.css"/>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" type="text/css" href="./styles/slick.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <section class="section section--viewport">
-        <div class="section__container">
-            <h1 class="section__title">PLAYGROUND</h1>
-            <h2 class="section__lead">by emcecha</h2>
-        </div>
-    </section>
-
-    <!-- navigation -->
-    
-    <div class="menu">
-        <div class="line line--top"></div>
-        <div class="line line--middle"></div>
-        <div class="line line--bottom"></div>
-    </div>
-    
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item">Home</li>
-            <li class="nav__item">About</li>
-            <li class="nav__item">Services</li>
-            <li class="nav__item">Contact</li>
-            <li class="nav__item">Projects</li>
-            <li class="nav__item">Team</li>
+      <div class="section__container">
+        <h1 class="section__title">PLAYGROUND</h1>
+        <h2 class="section__lead">by emcecha</h2>
+        <ul class="section__list">
+          <li class="section__item">
+            <a class="section__link" href="#move-into-view">
+              Move boxes into view on isIntersecting with Intersection Observer
+            </a>
+          </li>
         </ul>
-        <div class="nav__button">
-            Discover
-        </div>
-    </nav>
-
-    <!-- /\/\/\/\/\/\/\/\/ -->
+      </div>
+    </section>
 
     <!-- Move boxes into view on isIntersecting with Intersection Observer -->
 
-    <section class="section">
-        <div class="section__container">
-            <h2 class="section__lead">Move boxes into view on isIntersecting with Intersection Observer</h2>
-            <div class="move-boxes-into-view">
-                <div id="change-pointer" class="box observe translate-x-left">1</div>
-                <div class="box observe translate-y">2</div>
-                <div class="box observe translate-y">3</div>
-            </div>
+    <section id="move-into-view" class="section">
+      <div class="section__container">
+        <h2 class="section__lead">
+          Move boxes into view on isIntersecting with Intersection Observer
+        </h2>
+        <div class="move-boxes-into-view">
+          <div id="change-pointer" class="box observe translate-x-left">1</div>
+          <div class="box observe translate-y">2</div>
+          <div class="box observe translate-y">3</div>
+          <div class="box observe translate-y">4</div>
+          <div class="box observe translate-y">5</div>
+          <div class="box observe translate-y">6</div>
         </div>
+      </div>
     </section>
 
-    
+    <!-- Text moving side to side on scroll -->
 
-    <!-- <div class="custom-cursor"></div> -->
+    <section class="section">
+      <div class="section__container">
+        <h2 class="section__lead">Text moving side to side on scroll</h2>
+      </div>
+      <div class="moving-text">
+        <h3 class="text left">
+          I'm moving
+        </h3>
+        <h3 class="text right">
+          On scroll
+        </h3>
+      </div>
+    </section>
 
-    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script>
-    <script type="text/javascript" src="./js/test.js"></script>
-</body>
+    <!-- Counter -->
+
+    <section class="section">
+      <div class="section__container">
+        <h2 class="section__lead">Count NOW!</h2>
+        <div class="counter-container">
+          <div class="counter" data-decimal="false">100</div>
+          <div class="counter" data-decimal="false">200</div>
+          <div class="counter" data-decimal="true">9.99</div>
+        </div>
+        <a
+          href="https://codepen.io/maoberlehner/pen/jwVraW"
+          style="font-size: 25px; color: crimson"
+        >
+          CIRCLE animation! &rarr;
+        </a>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="./js/move-into-view.js"></script>
+    <script type="text/javascript" src="./js/custom-pointer.js"></script>
+    <script type="text/javascript" src="./js/moving-text.js"></script>
+    <script type="text/javascript" src="./js/counter.js"></script>
+  </body>
 </html>

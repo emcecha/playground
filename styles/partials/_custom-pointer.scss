@@ -1,0 +1,16 @@
+#change-pointer {
+  cursor: none;
+}
+
+.custom-cursor {
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../images/emoji.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
