@@ -1,0 +1,78 @@
+.hero {
+  background-color: #fba008;
+  font-family: "Montserrat";
+  color: white;
+  overflow-x: hidden;
+
+  .main-container {
+    max-width: 1250px;
+    padding: 0 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 0 0 53.25%;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    font-weight: 800;
+    margin: 0 0 1.9rem;
+    letter-spacing: 0.09rem;
+
+    strong {
+      color: #232f3e;
+      font-weight: 800;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    max-width: 45rem;
+    width: 70.5%;
+    margin: 0 0 2.5rem;
+  }
+
+  &__button-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    transition: 300ms text-decoration ease-in-out;
+    font-size: 1.6rem;
+    margin: 0 0 0 9.5%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__phone {
+    margin: 14.2rem 0 0 -3.7rem;
+    background-color: tomato;
+    flex: 0 0 52.5%;
+    padding-top: 65.7%;
+  }
+
+  .button {
+    width: 190px;
+    height: 50px;
+    background: #232f3e;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fd9d05;
+  }
+}
