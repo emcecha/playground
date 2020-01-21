@@ -365,4 +365,84 @@ body {
   font-weight: 600;
   color: #fd9d05;
 }
+
+.fancy-hover {
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Abril Fatface";
+  font-size: 4rem;
+  color: white;
+}
+
+.fancy-hover__link {
+  color: inherit;
+}
+
+.fancy-hover__base-layer, .fancy-hover__hover-layer {
+  width: 350px;
+  height: 90px;
+  border-radius: 1000rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fancy-hover__base-layer {
+  background-color: orange;
+  color: darkred;
+  position: relative;
+  border: 3px solid darkred;
+}
+
+.fancy-hover__hover-layer-box {
+  width: 0;
+  height: calc(100% + 6px);
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  overflow: hidden;
+  -webkit-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.fancy-hover__hover-layer {
+  background-color: darkred;
+  color: orange;
+  border: 3px solid orange;
+}
+
+.fancy-hover__arrow {
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  font-weight: 700;
+}
+
+.fancy-hover__link:hover .fancy-hover__hover-layer-box {
+  width: calc(100% + 6px);
+}
+
+.fancy-hover__link:hover .fancy-hover__arrow {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  -webkit-transition: -webkit-transform 200ms ease-in-out 300ms;
+  transition: -webkit-transform 200ms ease-in-out 300ms;
+  transition: transform 200ms ease-in-out 300ms;
+  transition: transform 200ms ease-in-out 300ms, -webkit-transform 200ms ease-in-out 300ms;
+}
 /*# sourceMappingURL=style.css.map */
