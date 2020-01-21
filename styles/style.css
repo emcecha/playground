@@ -445,4 +445,74 @@ body {
   transition: transform 200ms ease-in-out 300ms;
   transition: transform 200ms ease-in-out 300ms, -webkit-transform 200ms ease-in-out 300ms;
 }
+
+.error-page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Abril Fatface";
+  font-size: 17vmin;
+  color: white;
+}
+
+.error-page__container {
+  position: relative;
+}
+
+.error-page__half-circle-box {
+  width: 100%;
+  padding-top: 50%;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.error-page__half-circle-box--top {
+  top: -55%;
+  z-index: 3;
+}
+
+.error-page__half-circle-box--bottom {
+  bottom: -60%;
+  z-index: 1;
+}
+
+.error-page__half-circle {
+  height: 200%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.error-page__half-circle--top {
+  top: 0;
+  background-color: crimson;
+}
+
+.error-page__half-circle--bottom {
+  bottom: 0;
+  background-color: darkcyan;
+}
+
+.error-page__code {
+  padding: 0 5vmin;
+  position: relative;
+  z-index: 2;
+}
+
+.error-page__code-text {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
