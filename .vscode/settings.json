@@ -8,6 +8,7 @@
   ],
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
   "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.includeItems": ["styles/style.scss"],
   "editor.tabSize": 2,
   "prettier.useTabs": true,
   "editor.detectIndentation": false

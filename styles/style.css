@@ -34,6 +34,11 @@ body {
   margin: 0 auto;
 }
 
+.section__container--full-width {
+  max-width: none;
+  padding: 0;
+}
+
 .section__title {
   margin: 3rem 0;
   font-size: 8rem;
@@ -42,7 +47,7 @@ body {
 }
 
 .section__lead {
-  margin: 2rem 0 2rem;
+  margin: 2rem;
   font-size: 3rem;
   color: whitesmoke;
   font-weight: 400;
@@ -514,5 +519,255 @@ body {
 
 .error-page__code-text {
   display: block;
+}
+
+.semicircles {
+  min-height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.semicircle {
+  position: absolute;
+  -webkit-transition: opacity 0ms ease 200ms, -webkit-filter 200ms ease-in 200ms;
+  transition: opacity 0ms ease 200ms, -webkit-filter 200ms ease-in 200ms;
+  transition: filter 200ms ease-in 200ms, opacity 0ms ease 200ms;
+  transition: filter 200ms ease-in 200ms, opacity 0ms ease 200ms, -webkit-filter 200ms ease-in 200ms;
+}
+
+.semicircle:hover {
+  -webkit-filter: blur(2.5vw);
+          filter: blur(2.5vw);
+  -webkit-transition: opacity 0ms ease 200ms, -webkit-filter 200ms ease-in;
+  transition: opacity 0ms ease 200ms, -webkit-filter 200ms ease-in;
+  transition: filter 200ms ease-in, opacity 0ms ease 200ms;
+  transition: filter 200ms ease-in, opacity 0ms ease 200ms, -webkit-filter 200ms ease-in;
+  opacity: 0;
+}
+
+.semicircle__half {
+  width: 100%;
+  padding-top: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.semicircle__half::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  border-radius: 50%;
+}
+
+.semicircle--type-1 {
+  top: 20vh;
+  left: 21%;
+  width: 3%;
+  -webkit-animation: float-1 3s ease-in-out infinite alternate;
+          animation: float-1 3s ease-in-out infinite alternate;
+}
+
+.semicircle--type-1 .semicircle__half::before {
+  top: 0;
+  background-color: #ffa902;
+}
+
+.semicircle--type-2 {
+  top: 46vh;
+  left: 8%;
+  width: 1.7%;
+  -webkit-animation: float-2 2.3s ease-in-out infinite alternate;
+          animation: float-2 2.3s ease-in-out infinite alternate;
+}
+
+.semicircle--type-2 .semicircle__half::before {
+  top: 0;
+  background-color: #34e2e8;
+}
+
+.semicircle--type-3 {
+  top: 81vh;
+  left: 13.5%;
+  width: 2.8%;
+  -webkit-animation: float-3 2.8s ease-in-out infinite alternate;
+          animation: float-3 2.8s ease-in-out infinite alternate;
+}
+
+.semicircle--type-3 .semicircle__half::before {
+  bottom: 0;
+  background-color: #e41f7e;
+}
+
+.semicircle--type-4 {
+  top: 26vh;
+  right: 12.6%;
+  width: 4.2%;
+  -webkit-animation: float-4 4s ease-in-out infinite alternate;
+          animation: float-4 4s ease-in-out infinite alternate;
+}
+
+.semicircle--type-4 .semicircle__half::before {
+  bottom: 0;
+  background-color: #e41f7e;
+}
+
+.semicircle--type-5 {
+  top: 51vh;
+  right: 4.3%;
+  width: 3.3%;
+  -webkit-animation: float-5 3.5s ease-in-out infinite alternate;
+          animation: float-5 3.5s ease-in-out infinite alternate;
+}
+
+.semicircle--type-5 .semicircle__half::before {
+  bottom: 0;
+  background-color: #ffa902;
+}
+
+.semicircle--type-6 {
+  top: 85vh;
+  right: 13%;
+  width: 1.6%;
+  -webkit-animation: float-6 2.2s ease-in-out infinite alternate;
+          animation: float-6 2.2s ease-in-out infinite alternate;
+}
+
+.semicircle--type-6 .semicircle__half::before {
+  top: 0;
+  background-color: #34e2e8;
+}
+
+@-webkit-keyframes float-1 {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  100% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+}
+
+@keyframes float-1 {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  100% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+}
+
+@-webkit-keyframes float-2 {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+
+@keyframes float-2 {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+
+@-webkit-keyframes float-3 {
+  0% {
+    -webkit-transform: translateY(-160%);
+            transform: translateY(-160%);
+  }
+  100% {
+    -webkit-transform: translateY(160%);
+            transform: translateY(160%);
+  }
+}
+
+@keyframes float-3 {
+  0% {
+    -webkit-transform: translateY(-160%);
+            transform: translateY(-160%);
+  }
+  100% {
+    -webkit-transform: translateY(160%);
+            transform: translateY(160%);
+  }
+}
+
+@-webkit-keyframes float-4 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes float-4 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes float-5 {
+  0% {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+  }
+  100% {
+    -webkit-transform: translateY(130%);
+            transform: translateY(130%);
+  }
+}
+
+@keyframes float-5 {
+  0% {
+    -webkit-transform: translateY(-130%);
+            transform: translateY(-130%);
+  }
+  100% {
+    -webkit-transform: translateY(130%);
+            transform: translateY(130%);
+  }
+}
+
+@-webkit-keyframes float-6 {
+  0% {
+    -webkit-transform: translateY(-210%);
+            transform: translateY(-210%);
+  }
+  100% {
+    -webkit-transform: translateY(210%);
+            transform: translateY(210%);
+  }
+}
+
+@keyframes float-6 {
+  0% {
+    -webkit-transform: translateY(-210%);
+            transform: translateY(-210%);
+  }
+  100% {
+    -webkit-transform: translateY(210%);
+            transform: translateY(210%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
